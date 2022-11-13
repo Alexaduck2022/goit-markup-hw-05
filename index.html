@@ -32,7 +32,7 @@
 			</a>
 				<nav class="header-nav">
 					<ul class="header-list list">
-						<li><a href="./index.html" class="nav-link link">Студія</a></li>
+						<li><a href="./index.html" class="nav-link underline link">Студія</a></li>
 						<li><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
 						<li><a href="" class="nav-link link">Контакти</a></li>
 					</ul>
@@ -58,7 +58,7 @@
 			<!--Hero-->
 			<section class="hero">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="hero-btn">Замовити послугу</button>
+				<button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
 			</section>
 
 			<!--Особливості (назву скрити)-->
@@ -115,14 +115,17 @@
 				<div class="container">
 					<h2 class="work-title">Чим ми займаємося</h2>
 					<ul class="work-list list">
-						<li>
+						<li class="work-item">
 							<img src="./image/img.jpg" alt="Работа за комп'ютером" width="370" height="294" />
+							<p class="workdescription">Десктопні додатки</p>
 						</li>
-						<li>
+						<li class="work-item">
 							<img src="./image/img1.jpg" alt="Работа з телефону" width="370" height="294" />
+							<p class="workdescription">Мобільні додаткии</p>
 						</li>
-						<li>
+						<li class="work-item">
 							<img src="./image/img2.jpg" alt="Работа з планшету" width="370" height="294" />
+							<p class="workdescription">Дизайнерські рішення</p>
 						</li>
 					</ul>
 				</div>
@@ -513,5 +516,17 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Modal window -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="modal-btn" data-modal-close>
+					<svg class="modal-icon" width="11" height="11">
+					  <use href="./image/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
