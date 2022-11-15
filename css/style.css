@@ -13,7 +13,7 @@
 	--card-set-gap: 30px;
 	--items: 3;
 	--indent: 30px;
-	--anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	--anim: 2050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -470,6 +470,7 @@ footer {
 	justify-content: center;
 	gap: 8px;
 	margin-bottom: 50px;
+	margin-top: 80px;
 }
 /*--------------------Само портфолио--------------------------*/
 
@@ -492,8 +493,8 @@ footer {
 	display: block;
 	transition: box-shadow var(--anim);
 }
-.card-set-item:hover,
-.card-set-item:focus {
+.card-set-item.potfolio-frame:hover,
+.card-set-item.potfolio-frame:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-set-item:hover .overlay {
@@ -537,6 +538,8 @@ footer {
 	height: 100%;
 
 	background-color: rgba(0, 0, 0, 0.2);
+
+	transition: opacity var(--anim), transform var(--anim), visibility var(--anim);
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -576,4 +579,6 @@ footer {
 }
 .modal-icon {
 	fill: #000000;
+
+	transition: box-shadow var(--anim);
 }
